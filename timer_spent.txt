@@ -1,0 +1,8 @@
+03/08/2015
+- 15 minutes thinking in how to develop the api rest
+- 15 minutes reading and choosing the weather data api from internet
+- 30 minutes to make the api_rest.py
+- 10 minutes thinking in how to develop the command line tool
+- 10 minutes reading about argparse
+- 15 minutes to make the command line tool
+- 10 minutes checking the apps
