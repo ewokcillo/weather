@@ -16,10 +16,10 @@ def get_weather(city):
 
     if response.status_code == 200:
         json_data = response.json()
-        
+
         try:
             last_day =  max(json_data['list'], key=lambda x: x['dt'])
-            return_data = last_day['temp']['eve']
+            return_data = last_day['temp']
         except:
             return_data = {'error': "Error parsing weather data"}
     else:
