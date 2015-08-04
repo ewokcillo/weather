@@ -1,4 +1,7 @@
 # coding=utf-8
+"""
+Settings to add the global values in the webservice and the command line tool
+"""
 IP_HOST='0.0.0.0'
 PORT_HOST=5000
 
