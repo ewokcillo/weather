@@ -11,5 +11,5 @@ DEBUG=True
 WEATHER_DATA="http://api.openweathermap.org/data/2.5/forecast/daily?q={0}&units=metric&cnt=2"
 
 #logging
-LOG_FILE='logs/api.log'
+LOG_FILE='api.log'
 LOG_LEVEL=logging.DEBUG
