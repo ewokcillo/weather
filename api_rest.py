@@ -13,13 +13,17 @@ app = Flask(__name__)
 @app.route('/api/<city>', methods=['GET'])
 def get_weather(city):
     response = get(WEATHER_DATA.format(city))
-    json_data = response.json()
 
-    try:
-        return_data = json_data['list'][-1]['temp']['eve']
-    except:
-        return_data = ["Error parsing weather data"]
-
+    if response.status_code == 200:
+        json_data = response.json()
+        
+        try:
+            last_day =  max(json_data['list'], key=lambda x: x['dt'])
+            return_data = last_day['temp']['eve']
+        except:
+            return_data = {'error': "Error parsing weather data"}
+    else:
+        return_data = {'error': "Error obtaining data form openweathermap"}
 
     return json.dumps(return_data)
 
