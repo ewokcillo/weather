@@ -6,3 +6,7 @@
 - 10 minutes reading about argparse
 - 15 minutes to make the command line tool
 - 10 minutes checking the apps
+04/08/2015
+- 45 minutes to make tests and probe it
+- 60 minutes thinking and refactoring the code to accept stages
+- 60 minutes to add doc and write comments
